@@ -19,4 +19,9 @@ public class Magician extends Role {
     public void cure() {
         System.out.println("Cure with your magic .");
     }
+
+    @Override
+    public String toString() {
+        return "magician " + super.toString();
+    }
 }
