@@ -21,9 +21,12 @@ public class RPG {
         magician.setName("Huba");
         magician.setBlood(100);
         magician.setLevel(1);
-        
+
         showBlood(swordsMan);
         showBlood(magician);
+
+        drawFight(swordsMan);
+        drawFight(magician);
 
     }
 
@@ -31,4 +34,8 @@ public class RPG {
         System.out.printf("%s blood :%d %n", role.getName(), role.getBlood());
     }
 
+    static void drawFight(Role role) {
+        System.out.println(role.getName());
+        role.fight();
+    }
 }

@@ -11,6 +11,7 @@ package inherit.common;
  */
 public class SwordsMan extends Role {
 
+    @Override
     public void fight() {
         System.out.println("Fighting with your sword !");
     }
