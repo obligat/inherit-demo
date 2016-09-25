@@ -9,6 +9,9 @@ package inherit.common;
  *
  * @author dujinqiao
  */
-public class SwordsMan {
-    
+public class SwordsMan extends Role {
+
+    public void fight() {
+        System.out.println("Fighting with your sword !");
+    }
 }
