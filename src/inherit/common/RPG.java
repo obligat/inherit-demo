@@ -27,6 +27,7 @@ public class RPG {
 
         drawFight(swordsMan);
         drawFight(magician);
+        
     }
 
     static void showBlood(Role role) {
