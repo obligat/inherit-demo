@@ -18,6 +18,7 @@ public class RPG {
 
     static void demoSwordsMan() {
         Role swordsMan = new SwordsMan();
+//    wrong    Magician magician = (Magician) swordsMan;
         swordsMan.setName("Lici");
         swordsMan.setBlood(200);
         swordsMan.setLevel(1);
@@ -25,10 +26,11 @@ public class RPG {
     }
 
     static void demoMagician() {
-        Magician magician =  new Magician();
+        Magician magician = new Magician();
 //Exception in thread "main" java.lang.ClassCastException: inherit.common.Role cannot be cast to inherit.common.Magician
 // Magician magician =  new Role();
-//Magician magician =  (Magician) new Role();
+//Magician magician =  (Magician) new Role(); 
+        Role role = magician;
         magician.setName("Huba");
         magician.setBlood(100);
         magician.setLevel(1);
