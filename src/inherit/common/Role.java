@@ -11,9 +11,8 @@ package inherit.common;
  */
 public abstract class Role {
 
-
-    private String name;
-    private int level;
+    String name;
+    protected int level;
     private int blood;
 
     public int getBlood() {
@@ -40,7 +39,10 @@ public abstract class Role {
         this.name = name;
     }
 
-    abstract void fight() ;
-
+    abstract void fight();
+    
+    public String toString(){
+        return String.format("%s %d %d ",this.name,this.level,this.blood);
+    }
 
 }

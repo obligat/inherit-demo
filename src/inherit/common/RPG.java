@@ -27,7 +27,6 @@ public class RPG {
 
         drawFight(swordsMan);
         drawFight(magician);
-
     }
 
     static void showBlood(Role role) {
@@ -37,5 +36,6 @@ public class RPG {
     static void drawFight(Role role) {
         System.out.println(role.getName());
         role.fight();
+        role.toString();
     }
 }
