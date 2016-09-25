@@ -40,5 +40,9 @@ public class Role {
         this.name = name;
     }
 
+    void fight() {
+//        subclass override fight method.
+    }
+
 
 }
