@@ -28,8 +28,8 @@ public class RPG {
         drawFight(swordsMan);
         drawFight(magician);
 
-        System.out.println(swordsMan.toString());
-        System.out.println(magician.toString());
+        System.out.println(swordsMan);
+        System.out.println(magician);
     }
 
     static void showBlood(Role role) {
