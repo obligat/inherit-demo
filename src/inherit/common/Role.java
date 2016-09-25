@@ -9,7 +9,7 @@ package inherit.common;
  *
  * @author dujinqiao
  */
-public class Role {
+public abstract class Role {
 
 
     private String name;
@@ -40,9 +40,7 @@ public class Role {
         this.name = name;
     }
 
-    void fight() {
-//        subclass override fight method.
-    }
+    abstract void fight() ;
 
 
 }
