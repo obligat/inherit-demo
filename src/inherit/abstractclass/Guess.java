@@ -6,14 +6,13 @@ public class Guess {
 
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
-        int number = (int) (Math.random() * 10);
         int guess;
+        int number = (int) (Math.random() * 10);
         do {
-            System.out.println(number);
             System.out.println("Please input number to guess :");
             guess = scanner.nextInt();
         } while (guess != number);
-        
+
         System.out.println("You guessed it !");
     }
 }
